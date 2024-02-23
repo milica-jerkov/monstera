@@ -14,3 +14,24 @@ a {
 li {
   list-style: none;
 }
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+textarea {
+  border: none;
+  outline: none;
+}
