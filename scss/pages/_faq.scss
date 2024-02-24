@@ -14,7 +14,7 @@
     &::after {
       left: 0;
       //   transform: translateX(-50%);
-      @include ptitel("In Search of Answers?");
+      @include ptitel('In Search of Answers?');
       width: max-content;
     }
   }
@@ -26,7 +26,7 @@
   grid-column: 9/13;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     width: 450px;
     height: 450px;
     background-color: $accent;
@@ -52,7 +52,7 @@
     &::after {
       left: 0;
       //   transform: translateX(-50%);
-      @include ptitel("Plant Perks");
+      @include ptitel('Plant Perks');
       left: 50%;
       transform: translateX(-50%);
     }
@@ -91,6 +91,7 @@
   }
 }
 .questions {
+  padding-bottom: 180px;
   h2 {
     position: relative;
     margin-bottom: 80px;
@@ -98,7 +99,7 @@
     &::after {
       left: 0;
       //   transform: translateX(-50%);
-      @include ptitel("Plant Perks");
+      @include ptitel('Plant Perks');
       left: 50%;
       transform: translateX(-50%);
     }
@@ -119,7 +120,7 @@
         text-align: left;
         @include flexbox(flex, space-between, center);
         &::after {
-          content: url("../../assets/icons/Vector.svg");
+          content: url('../../assets/icons/Vector.svg');
         }
         .accordion-content {
           margin-top: 24px;

@@ -1,0 +1,35 @@
+.blog {
+  @include padding-y(180px);
+  @include flexbox(flex, space-between, flex-start, 20px);
+  img {
+    width: 30%;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+  }
+  .blog-content {
+    width: 50%;
+    @include flexbox(flex, flex-start, flex-start, 40px);
+    flex-direction: column;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    &::after {
+      @include ptitel('Blog');
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.blog-background {
+  width: 20%;
+  background: $light;
+  height: calc(100vh - 150px);
+  position: absolute;
+  left: 0;
+  top: -70px;
+  z-index: -1;
+  border-bottom-right-radius: 120px;
+}
